@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Every Mail</title>
+
+		<!-- 오픈그래프(카톡 등으로 공유할 때 나오는 화면) 설정 -->
+		<meta property="op:type" content="website" />
+		<meta property="og:site_name" content="EveryMail" />
+		<meta property="og:title" content="Internet Programming Team Project" />
+		<meta property="og:description" content="교수님에게 이메일을 보내는 새로운 방법, 에브리메일" />
+		<meta property="og:image" content="./images/og_mjLogo.jpg" />
+		<meta property="og:url" content="http://..." />
+		<!-- 아직 url 모름 -->
+
+		<link rel="icon" href="../static/images/title_mjLogo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+			integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="../static/css/mail.css" />
+		<script src="../static/js/home.js"></script>
+	</head>
+
+	<body>
+		<!-- 헤더 부분 -->
+		<header>
+			<div class="inner">
+				<a href="/" class="logo"
+					><img src="../static/images/title_mjLogo.png" alt="MyongJi" width="40px"
+				/></a>
+				<a href="/" class="title">EveryMail</a>
+				<div class="header_menu">
+					<ul class="menu">
+						<li>
+							<a href="#">닉네임</a>
+						</li>
+						<li>
+							<a href="#">로그아웃</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- 박스 부분 -->
+		<section>
+			<div class="box">
+				<table class="table">
+					<tr>
+						<!-- 박스의 왼쪽 부분 -->
+						<td class="left">
+							<!-- 받는 사람 -->
+							<div class="wr_receiver">
+								<p style="font-size: 13.5px; margin-left: 15px; font-weight: bold">받는 사람 :</p>
+							</div>
+
+							<!-- 제목 입력-->
+							<div class="wr_title">
+								<input type="text" id="title" placeholder="제목을 입력하세요" />
+							</div>
+
+							<!-- 내용 입력-->
+							<div class="wr_content">
+								<textarea id="content" placeholder="내용을 입력하세요" ;></textarea>
+							</div>
+						</td>
+
+						<!-- 박스의 가운데 경계선 -->
+						<td align="center">
+							<img src="../static/images/line.png" alt="" style="height: 350px" />
+						</td>
+
+						<!-- 박스의 오른쪽 부분 -->
+						<td class="right">
+							<p class="side_title">내가 쓴 메일함</p>
+
+							<!-- 테이블 제목 (교과번호 ~ 메일함)-->
+							<table class="mailbox" cellspacing="80">
+								<div>
+									<tr class="box_2">
+										<th>교과 번호</th>
+										<th>교수님명</th>
+										<th>강의명</th>
+										<th>메일함</th>
+									</tr>
+								</div>
+
+								<!-- 보낸 메일함 리스트-->
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</body>
+</html>
