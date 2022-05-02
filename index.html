@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Every Mail</title>
+
+  <!-- 오픈그래프(카톡 등으로 공유할 때 나오는 화면) 설정 -->
+  <meta property="op:type" content="website">
+  <meta property="og:site_name" content="EveryMail">
+  <meta property="og:title" content="Internet Programming Team Project">
+  <meta property="og:description" content="교수님에게 이메일을 보내는 새로운 방법, 에브리메일">
+  <meta property="og:image" content="./images/og_mjLogo.jpg">
+  <meta property="og:url" content="http://..."> <!-- 아직 url 모름 -->
+
+  <!-- 화면 상단의 로고, 글꼴 설정 -->
+  <!-- 제일 만만한 나눔 고딕 400, 700으로 했습니다! 
+    기본 설정을 400으로 했으니 혹시 쓰시다가 두꺼운 글씨를 원하신다면 font-weight: 700 으로 해주시면 됩니당 
+    다른 글꼴이 좋으시다면 언제든지 수정해주세요^^ -->
+  <link rel="icon" href="./images/title_mjLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./main.js"></script>
+</head>
+
+<body>
+<!-- 헤더 부분 -->
+  <header>
+    <div class="inner">
+      <a href="/" class="logo"><img src="./images/title_mjLogo.png" alt="MyongJi" width="40px"></a>
+      <a href="/" class="title">EveryMail</a>
+      <div class="header_menu">
+        <ul class="menu">
+          <li>
+            <a href="#">로그인</a>
+          </li>
+          <li>
+            <a href="#">회원가입</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 박스 부분 -->
+  <section>
+    <div class="box">
+      <table class="table">
+        <tr>
+          <!-- 박스의 왼쪽 부분 -->
+          <td class="left">
+            <p class="left_title">EveryMail</p>
+            <p class="left_content">교수님께 드릴 말씀이 있으십니까?</p>
+            <p class="left_content">교수님의 이메일을 찾는 일이 번거로우십니까?</p>
+            <p class="left_content">에브리메일을 사용하십시오.</p>
+            <p class="left_content">에브리메일은 교수님과 통하는 가장 쉽고 빠른 길입니다.</p>
+          </td>
+
+          <!-- 박스의 가운데 경계선 -->
+          <td align="center">
+            <img src="./images/line.png" alt="" style="height: 350px;">
+          </td>
+
+          <!-- 박스의 오른쪽 부분 -->
+          <td class="right">
+
+            <div class="right_slide">
+              <div class="slidePage fade">
+                  <img src="./images/dummy1.png" style="width:100%">
+                  <div class="text">1. 강의를 검색하고 시간표에 추가<br>(지금은 대충 만들어 둔거에요ㅎ..)</dr>
+                  </div>
+              </div>
+      
+              <div class="slidePage fade" style="display: none;">
+                  <img src="./images/dummy2.png" style="width:100%">
+                  <div class="text">2. 교수님께 이메일 작성</div>
+              </div>
+      
+              <div class="slidePage fade" style="display: none;">
+                  <img src="./images/dummy3.png" style="width:100%">
+                  <div class="text">3. 내가 쓴 메일함 확인</div>
+              </div>
+      
+              <a class="prevBtn" onclick="plusSlides(-1)">&#9664;</a>
+              <a class="nextBtn" onclick="plusSlides(1)">&#9654;</a>
+            </div><br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</body>
+
+</html>
