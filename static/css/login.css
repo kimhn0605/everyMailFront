@@ -1,0 +1,114 @@
+/* COMMON */
+body {
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+	font-family: "Nanum Gothic", sans-serif;
+	margin: 0;
+}
+
+img {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* HEADER */
+header {
+	background-color: #eaeaea;
+}
+
+header .inner {
+	width: 95%;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+}
+
+header .logo {
+	height: 40px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+header .title {
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+	position: absolute;
+	margin-top: 8px;
+	margin-left: 50px;
+}
+
+/* SECTION */
+section .box {
+	height: 450px;
+	margin: 20px;
+}
+
+section .box .table {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+/* TABLE LEFT */
+section .box .table .left {
+	width: 50%;
+	padding-left: 50px;
+}
+
+section .box .table .left .left_title {
+	width: 80%;
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: 0px;
+}
+
+section .box .table .left .left_content {
+	width: 80%;
+	font-size: 15px;
+}
+
+/* TABLE RIGHT */
+
+section .box .table .right {
+	font-size: 20px;
+    width: 50%;
+    text-align: center;
+    font-weight: bolder;
+	/*margin: 30px;*/
+}
+
+.side_title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.login {
+    width: 50%; 
+    height: 120px; 
+    padding: 20px;
+    margin-left: 20%;
+    font-size: medium;
+    text-align: center;
+    border-radius: 10%;
+}
+
+#user_id,
+#user_pw {
+    margin-bottom: 15px;
+}
+
+#login_sub,
+#signup_sub {
+    margin: 10px;
+}
