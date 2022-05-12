@@ -122,97 +122,87 @@ section .box .table .left {
 	padding-left: 4%;
 }
 
-.wr_receiver {
+.inner_box {
 	position: relative;
 	height: 9%;
-	width: 90%;
+	width: 95%;
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
 	margin-bottom: 10px;
 }
 
-.wr_title {
-	position: relative;
-	line-height: 45px;
-	height: 9%;
-	width: 90%;
-	border: 2px solid rgb(0, 0, 0, 0.1);
-	border-radius: 15px;
-	margin-bottom: 10px;
+input:-ms-input-placeholder {
+	color: #a8a8a8;
 }
 
-.wr_content {
-	position: relative;
+input::-webkit-input-placeholder {
+	color: #a8a8a8;
+}
+
+input::-moz-placeholder {
+	color: #a8a8a8;
+}
+
+.search {
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+	background-color: #ffffff;
+}
+
+input {
+	font-size: 15px;
+	width: 78%;
 	height: 50%;
+	padding: 10px;
+	border: 0px;
+	border-radius: 15px 0 0 15px;
+	outline: none;
+}
+
+button {
+	width: 15.3%;
+	height: 100%;
+	border: 0px;
+	border-radius: 0 12px 12px 0;
+	color: black;
+	font-weight: bold;
+	outline: none;
+	float: right;
+}
+
+.left .inner_box {
+	position: relative;
+	width: 90%;
+	height: 9%;
+	border: 2px solid rgb(0, 0, 0, 0.1);
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.left .inner_box table {
+	width: 100%;
+	margin: 4px 0;
+}
+
+.inner_box table tr td {
+	font-size: 14px;
+	width: 25%;
+}
+
+.result {
+	position: relative;
+	height: 65%;
 	width: 90%;
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
-}
-
-#title {
-	width: 70%;
-	font-size: 15px;
-	margin-left: 15px;
-	background-color: transparent;
-	border: 0 solid black;
-}
-
-#content {
-	position: absolute;
-	width: 85%;
-	height: 70%;
-	font-size: 15px;
-	background-color: transparent;
-	border: 0 solid black;
-	margin: 12px 15px;
-	resize: none;
-}
-
-#submit {
-	position: relative;
-	width: 90%;
-	height: 40px;
-	font-size: 12px;
-	color: white;
-	background-color: orangered;
-	font-weight: 300;
-	border-radius: 5px;
-	border: 0 solid black;
-	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 /* TABLE RIGHT */
 section .box .table .right {
 	width: 50%;
 	padding-left: 4%;
-}
-
-.right .mailbox_title {
-	position: relative;
-}
-
-.mailbox_title .content {
-	font-size: 25px;
-	font-weight: 700;
-}
-
-.right .mailbox_menu {
-	position: relative;
-	width: 90%;
-	height: 9%;
-	border: 2px solid rgb(0, 0, 0, 0.1);
-	border-radius: 15px;
-	margin-bottom: 10px;
-}
-
-.right .mailbox_menu table {
-	width: 100%;
-	margin: 4px 0;
-}
-
-.mailbox_menu table tr td {
-	font-size: 14px;
-	width: 25%;
 }
 
 .right .mailbox_list {
@@ -222,4 +212,25 @@ section .box .table .right {
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
 	margin-bottom: 20px;
+}
+
+.timeblock {
+	border-collapse: collapse;
+	text-align: center;
+	margin-top: 45px;
+	border-radius: 15px;
+	width: 92%;
+}
+
+.timeblock tr,
+.timeblock td {
+	border: 1px solid rgb(0, 0, 0, 0.1);
+	width: 10%;
+	padding: 7px;
+}
+
+.timeblock .std {
+	background-color: rgb(255, 234, 202);
+	font-size: 15px;
+	font-weight: bolder;
 }
