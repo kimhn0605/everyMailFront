@@ -28,7 +28,6 @@
 			referrerpolicy="no-referrer"
 		></script>
 		<link rel="stylesheet" href="../static/css/timeblock.css" />
-		<script src="../static/js/home.js"></script>
 	</head>
 
 	<body>
@@ -77,12 +76,12 @@
 								</table>
 							</div>
 
-							<div class="result"></div>
+							<div id="result"></div>
 						</td>
 
 						<!-- 박스의 가운데 경계선 -->
 						<td align="center">
-							<img src="../static/images/line.png" alt="" style="height: 350px" />
+							<img src="../static/images/line.png" alt="" style="height: 140px" />
 						</td>
 
 						<!-- 박스의 오른쪽 부분 -->
@@ -91,84 +90,73 @@
 								<p class="content">2022-1학기 시간표</p>
 							</div>
 
-							<table class="timeblock">
-								<tr class="std">
-									<td></td>
-									<td>Mon</td>
-									<td>Tue</td>
-									<td>Wed</td>
-									<td>Thu</td>
-									<td>Fri</td>
-								</tr>
-								<tr>
-									<td>9</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>10</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>11</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>12</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>1</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>2</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>3</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>4</td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</table>
+							<table class="timeblock" width="92%">
+							<tr>
+								<th></th>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+							</tr>
+							<tr>
+								<th>1교시</th>
+								<td style="background: Plum">모바일 프로그래밍</td>
+								<td style="background: LightGoldenRodYellow">인터넷 프로그래밍</td>
+								<td style="background: Plum" rowspan="2">모바일 프로그래밍</td>
+								<td style="background: LightGoldenRodYellow" rowspan="2">인터넷 프로그래밍</td>
+							</tr>
 						</td>
+					</tr>
+					<tr>
+						<th>2교시</th>
+						<td style="background: Pink" rowspan="2">알고리즘</td>
+			
+					</tr>
+					<tr>
+						<th>3교시</th>
+						<td> </td>
+						<td style="background: Pink">알고리즘</td>
+						<td> </td>
+					
+					</tr>
+					<tr>
+						<th>4교시</th>
+						<td> </td>
+						<td style="background: LavenderBlush">영어회화2</td>
+						<td> </td>
+						<td style="background: LavenderBlush">영어회화2</td>
+					</tr>
+					<tr>
+						<th>5교시</th>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th>6교시</th>
+						<td style="background: Lavender" rowspan="2">C++ Programming</td>
+						<td style="background: LightCyan" rowspan="3">회로이론</td>
+						<td style="background: Lavender">C++ Programming</td>
+						<td> </td>
+
+					</tr>
+					<tr>
+						<th>7교시</th>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th>8교시</th>
+						<td> </td> 
+						<td> </td>
+						<td> </td>
 					</tr>
 				</table>
 			</div>
 		</section>
+		<script src="../static/js/timeblock.js"></script>
 	</body>
 </html>

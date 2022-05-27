@@ -198,7 +198,6 @@ button {
 	border-radius: 15px;
 	margin-bottom: 10px;
 }
-
 /* TABLE RIGHT */
 section .box .table .right {
 	width: 50%;
@@ -216,10 +215,10 @@ section .box .table .right {
 
 .timeblock {
 	border-collapse: collapse;
+	word-break: break-all;
 	text-align: center;
 	margin-top: 45px;
 	border-radius: 15px;
-	width: 92%;
 }
 
 .timeblock tr,
@@ -229,8 +228,6 @@ section .box .table .right {
 	padding: 7px;
 }
 
-.timeblock .std {
-	background-color: rgb(255, 234, 202);
-	font-size: 15px;
-	font-weight: bolder;
+.timeblock th {
+	width: 10%;
 }
