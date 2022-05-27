@@ -20,31 +20,3 @@ async function login() {
     console.log(error);
   }
 }
-
-async function test() {
-  await fetch("https://api.github.com/users/xiaotian/repos")
-    .then(
-      (resp) => resp.json() // this returns a promise
-    )
-    .then((repos) => {
-      for (const repo of repos) {
-        console.log(repo.name);
-      }
-    })
-    .catch((ex) => {
-      console.error(ex);
-    });
-}
-
-function createGist(opts) {
-  fetch("https://api.github.com/gists", {
-    method: "post",
-    body: JSON.stringify(opts),
-  })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      ChromeSamples.log("Created Gist:", data.html_url);
-    });
-}
