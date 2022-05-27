@@ -1,5 +1,7 @@
+const { cookie } = require("express/lib/response");
+
 // 쿠키에 값 설정하기
-Cookies.set('name', 'value');
+Cookies.set('X-Acess Token', 'response.data.jwt');
 
 // 유효기간과 함께 쿠키에 값 설정하기
 Cookies.set('name', 'value', { expires: 7 });
@@ -20,7 +22,8 @@ fetch("http://ec2-54-167-22-41.compute-1.amazonaws.com/api/auth/sign-in", {
     "nickName": user_id,
 	"password": user_pw,
   }),
-}).then((response) => console.log(response));
+}).then((response) => Cookies.set('X-Acess Token', 'response.data.jwt'));
+
 
 // 시간표 전체 불러오기
 fetch("http://ec2-54-167-22-41.compute-1.amazonaws.com/api/timeTable/entire", {
@@ -29,4 +32,4 @@ fetch("http://ec2-54-167-22-41.compute-1.amazonaws.com/api/timeTable/entire", {
     "nickName": user_id,
 	"password": user_pw,
   }),
-}).then((response) => console.log(response));
+}).then((response) => Cookies.set('X-Acess Token', 'response.data.jwt'));
