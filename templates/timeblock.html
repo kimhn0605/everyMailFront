@@ -27,9 +27,8 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-		<link rel="stylesheet" href="../static/css/mail.css" />
+		<link rel="stylesheet" href="../static/css/timeblock.css" />
 		<script src="../static/js/home.js"></script>
-		<script srsc="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
 	</head>
 
 	<body>
@@ -60,25 +59,25 @@
 					<tr>
 						<!-- 박스의 왼쪽 부분 -->
 						<td class="left">
-							<!-- 받는 사람 -->
-							<div class="wr_receiver">
-								<p style="font-size: 13px; margin-left: 15px; font-weight: bold">받는 사람 :</p>
+							<div class="inner_box">
+								<div class="search">
+									<input type="text" placeholder="검색어 입력" />
+									<button>검색</button>
+								</div>
+							</div>
+							<!-- 교과번호 ~ 메일함-->
+							<div class="inner_box">
+								<table>
+									<tr align="center">
+										<td>교과번호</td>
+										<td>교수님명</td>
+										<td>강의과목</td>
+										<td>메일 보내기</td>
+									</tr>
+								</table>
 							</div>
 
-							<!-- 제목 입력-->
-							<div class="wr_title">
-								<input type="text" id="title" placeholder="제목을 입력하세요" />
-							</div>
-
-							<!-- 내용 입력-->
-							<div class="wr_content">
-								<textarea id="content" placeholder="내용을 입력하세요" ;></textarea>
-							</div>
-
-							<!-- 전송 버튼 -->
-							<form action="">
-								<input type="submit" id="submit" value="메일 전송" />
-							</form>
+							<div class="result"></div>
 						</td>
 
 						<!-- 박스의 가운데 경계선 -->
@@ -88,20 +87,83 @@
 
 						<!-- 박스의 오른쪽 부분 -->
 						<td class="right">
-							<p class="side_title">내가 쓴 메일함</p>
+							<div class="side_title">
+								<p class="content">2022-1학기 시간표</p>
+							</div>
 
-							<!-- 테이블 제목 (교과번호 ~ 메일함)-->
-							<table class="mailbox" cellspacing="80">
-								<div>
-									<tr class="box_2">
-										<th>교과 번호</th>
-										<th>교수님명</th>
-										<th>강의명</th>
-										<th>메일함</th>
-									</tr>
-								</div>
-
-								<!-- 보낸 메일함 리스트-->
+							<table class="timeblock">
+								<tr class="std">
+									<td></td>
+									<td>Mon</td>
+									<td>Tue</td>
+									<td>Wed</td>
+									<td>Thu</td>
+									<td>Fri</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
 							</table>
 						</td>
 					</tr>
