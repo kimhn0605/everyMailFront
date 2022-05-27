@@ -1,0 +1,32 @@
+
+.box {
+    width: 90%;
+    margin: 20px auto;
+	border: 2px solid rgb(0, 0, 0, 0.5);
+	border-radius: 10px;
+    padding: 10px 0;
+}
+
+.wr_receiver {
+	position: relative;
+	width: 90%;
+	border: 2px solid rgb(0, 0, 0, 0.1);
+	border-radius: 15px;
+    margin: 10px auto;
+}
+
+.wr_title {
+	position: relative;
+	width: 90%;
+	border: 2px solid rgb(0, 0, 0, 0.1);
+	border-radius: 15px;
+    margin: 10px auto;
+}
+
+.wr_content {
+	position: relative;
+	width: 90%;
+	border: 2px solid rgb(0, 0, 0, 0.1);
+	border-radius: 15px;
+    margin: 10px auto;
+}

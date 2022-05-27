@@ -206,8 +206,8 @@ section .box .table .right {
 }
 
 .right .mailbox_menu table {
-	width: 100%;
-	margin: 4px 0;
+	width: 90%;
+	margin: 7px auto;
 }
 
 .mailbox_menu table tr td {
@@ -222,4 +222,30 @@ section .box .table .right {
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
 	margin-bottom: 20px;
+	overflow: auto;
+}
+
+#mailbox_list_contents {
+	width: 90%;
+	margin: 3% auto;
+	font-size: 12px;
+	table-layout: fixed;
+}
+
+#mailbox_list_contents tr td{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mail_button {
+	padding: 0 10%;
+	background-color: #a5e7f1;
+	border: 2px solid #a5e7f1;
+	border-radius: 30px;
+}
+
+.mail_button:hover {
+	background-color: #CFF2F7;
+	border: 2px solid #CFF2F7;
 }
