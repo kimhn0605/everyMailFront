@@ -33,5 +33,5 @@ function showSlides(n) {
 }
 
 function popUp() {
-  window.location.href = "http://localhost:5500/index.html";
+  window.location.href = "../index.html";
 }
