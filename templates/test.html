@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Every Mail</title>
+
+		<!-- 오픈그래프(카톡 등으로 공유할 때 나오는 화면) 설정 -->
+		<meta property="op:type" content="website" />
+		<meta property="og:site_name" content="EveryMail" />
+		<meta property="og:title" content="Internet Programming Team Project" />
+		<meta property="og:description" content="교수님에게 이메일을 보내는 새로운 방법, 에브리메일" />
+		<meta property="og:image" content="./images/og_mjLogo.jpg" />
+		<meta property="og:url" content="http://..." />
+		<!-- 아직 url 모름 -->
+
+		<link rel="icon" href="../static/images/title_mjLogo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+			integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="../static/css/timeblock.css" />
+	</head>
+
+	<body>
+		<!-- 헤더 부분 -->
+		<header>
+			<div class="inner">
+				<a href="/" class="logo"
+					><img src="../static/images/title_mjLogo.png" alt="MyongJi" width="40px"
+				/></a>
+				<a href="/" class="title">EveryMail</a>
+				<div class="header_menu">
+					<ul class="menu">
+						<li>
+							<a href="#">닉네임</a>
+						</li>
+						<li>
+							<a href="#">로그아웃</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- 박스 부분 -->
+		<section>
+			<div class="box">
+				<table class="table">
+					<tr>
+						<!-- 박스의 왼쪽 부분 -->
+						<td class="left">
+							<div class="inner_box">
+								<div class="search">
+									<input id="search" type="text" placeholder="검색어 입력" />
+									<button class="searchBtn" onclick="search()">검색</button>
+								</div>
+							</div>
+
+							<!-- 교과번호 ~ 메일함-->
+							<div class="inner_box">
+								<table>
+									<tr align="center">
+										<td>교과번호</td>
+										<td>교수님명</td>
+										<td>강의과목</td>
+										<td>시간표 추가</td>
+									</tr>
+								</table>
+							</div>
+							<!-- 강의 목록 -->
+							<div class="result">
+								<table id="result_contents">
+								</table>
+							</div>
+
+						<!-- 박스의 가운데 경계선 -->
+						<td align="center">
+							<img src="../static/images/line.png" alt="" style="height: 140px" />
+						</td>
+
+						<!-- 박스의 오른쪽 부분 -->
+						<td class="right">
+							<div class="side_title">
+								<p class="content">2022-1학기 시간표</p>
+							</div>
+
+							<table class="timeblock" width="92%">
+							<tr>
+								<th></th>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+							</tr>
+							<tr>
+								<th>1교시</th>
+								<td> </td>
+								<td id="first"></td>
+								<td> </td>
+								<td id="second"></td>
+							</tr>
+						</td>
+					</tr>
+					<tr>
+						<th>2교시</th>
+						<td> </td>
+						<td> </td>
+            <td> </td>
+            <td> </td>
+					</tr>
+					<tr>
+						<th>3교시</th>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					
+					</tr>
+					<tr>
+						<th>4교시</th>
+						<td> </td>
+            <td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th>5교시</th>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th>6교시</th>
+						<td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+
+					</tr>
+					<tr>
+						<th>7교시</th>
+						<td> </td>
+						<td> </td>
+            <td> </td>
+						<td> </td>
+					</tr>
+					<tr>
+						<th>8교시</th>
+						<td> </td> 
+						<td> </td>
+						<td> </td>
+            <td> </td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<script src="../static/js/data.js"></script>
+		<script src="../static/js/timeblock.js"></script>
+	</body>
+</html>
