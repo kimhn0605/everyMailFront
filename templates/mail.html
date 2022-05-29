@@ -1,127 +1,124 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Every Mail</title>
+	<head>
+		<meta charset="utf-8" />
+		<title>Every Mail</title>
 
-    <link rel="icon" href="../static/images/title_mjLogo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+		<link rel="icon" href="../static/images/title_mjLogo.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link rel="stylesheet" href="../static/css/mail.css" />
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
-    <script src="../static/js/mail.js"></script>
-  </head>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+			integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<link rel="stylesheet" href="../static/css/mail.css" />
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+		<script src="../static/js/mail.js"></script>
+	</head>
 
-  <body>
-    <!-- 헤더 부분 -->
-    <header>
-      <div class="inner">
-        <a href="/" class="logo"
-          ><img
-            src="../static/images/title_mjLogo.png"
-            alt="MyongJi"
-            width="40px"
-        /></a>
-        <a href="/" class="title">EveryMail</a>
-        <div class="header_menu">
-          <ul class="menu">
-            <li>
-              <a href="#">닉네임</a>
-            </li>
-            <li>
-              <a href="#">로그아웃</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+	<body>
+		<!-- 헤더 부분 -->
+		<header>
+			<div class="inner">
+				<a href="/" class="logo"
+					><img src="../static/images/title_mjLogo.png" alt="MyongJi" width="40px"
+				/></a>
+				<a href="/" class="title">EveryMail</a>
+				<div class="header_menu">
+					<ul class="menu">
+						<li>
+							<a href="#">닉네임</a>
+						</li>
+						<li>
+							<a href="#">로그아웃</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
-    <!-- 박스 부분 -->
-    <section>
-      <div class="box">
-        <table class="table">
-          <tr>
-            <!-- 박스의 왼쪽 부분 -->
-            <td class="left">
-              <!-- 받는 사람 -->
-              <div class="wr_receiver">
-                <p
-                  style="font-size: 13px; margin-left: 15px; font-weight: bold"
-                >
-                  받는 사람 :
-                </p>
-              </div>
+		<!-- 박스 부분 -->
+		<section>
+			<div class="box">
+				<table class="table">
+					<tr>
+						<!-- 박스의 왼쪽 부분 -->
+						<td class="left">
+							<!-- 받는 사람 -->
+							<div class="wr_receiver">
+								<p
+									style="
+										display: inline-block;
+										font-size: 16px;
+										margin-left: 15px;
+										font-weight: bold;
+									"
+								>
+									받는 사람 :
+								</p>
+								<div style="display: inline-block" id="receiver">
+									<p style="font-size: 15px">정재희 교수님</p>
+								</div>
+							</div>
 
-              <!-- 제목 입력-->
-              <div class="wr_title">
-                <input type="text" id="title" placeholder="제목을 입력하세요" />
-              </div>
+							<!-- 제목 입력-->
+							<div class="wr_title">
+								<input type="text" id="title" placeholder="제목을 입력하세요" />
+							</div>
 
-              <!-- 내용 입력-->
-              <div class="wr_content">
-                <textarea
-                  id="content"
-                  placeholder="내용을 입력하세요"
-                  ;
-                ></textarea>
-              </div>
+							<!-- 내용 입력-->
+							<div class="wr_content">
+								<textarea id="content" placeholder="내용을 입력하세요" ;></textarea>
+							</div>
 
-              <!-- 전송 버튼 -->
-              <form action="">
-                <input type="submit" id="submit" value="메일 전송" />
-              </form>
-            </td>
+							<!-- 전송 버튼 -->
+							<form action="">
+								<input type="submit" id="submit" value="메일 전송" />
+							</form>
+						</td>
 
-            <!-- 박스의 가운데 경계선 -->
-            <td align="center">
-              <!-- <img src="../static/images/line.png" alt="" style="height: 350px" /> -->
-              <img
-                src="../static/images/line.png"
-                alt=""
-                style="height: 350px"
-              />
-            </td>
+						<!-- 박스의 가운데 경계선 -->
+						<td align="center">
+							<!-- <img src="../static/images/line.png" alt="" style="height: 350px" /> -->
+							<img src="../static/images/line.png" alt="" style="height: 350px" />
+						</td>
 
-            <!-- 박스의 오른쪽 부분 -->
-            <td class="right">
-              <div class="mailbox_title">
-                <p class="content">내가 쓴 메일함</p>
-              </div>
+						<!-- 박스의 오른쪽 부분 -->
+						<td class="right">
+							<div class="mailbox_title">
+								<p class="content">내가 쓴 메일함</p>
+							</div>
 
-              <!-- 내가 쓴 메일함 메뉴 (교과번호 ~ 메일함)-->
-              <div class="mailbox_menu">
-                <table>
-                  <tr align="center">
-                    <td>보낸날짜</td>
-                    <td>교수님명</td>
-                    <td>강의과목</td>
-                    <td>메일함</td>
-                  </tr>
-                </table>
-              </div>
+							<!-- 내가 쓴 메일함 메뉴 (교과번호 ~ 메일함)-->
+							<div class="mailbox_menu">
+								<table>
+									<tr align="center">
+										<td>보낸날짜</td>
+										<td>교수님명</td>
+										<td>강의과목</td>
+										<td>메일함</td>
+									</tr>
+								</table>
+							</div>
 
-              <!-- 내가 쓴 메일함 리스트 -->
-              <div class="mailbox_list">
-                <table id="mailbox_list_contents"></table>
-              </div>
+							<!-- 내가 쓴 메일함 리스트 -->
+							<div class="mailbox_list">
+								<table id="mailbox_list_contents"></table>
+							</div>
 
-              <!-- 상세보기 팝업창에 정보 넘겨주기 위함 -->
-              <div id="userID" style="display: none"></div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </section>
-  </body>
+							<!-- 상세보기 팝업창에 정보 넘겨주기 위함 -->
+							<div id="userID" style="display: none"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</body>
 </html>

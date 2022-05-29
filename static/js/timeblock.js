@@ -1,15 +1,15 @@
 function addBtn() {
 	var first = document.getElementById("first");
-	first.style.background = "Pink";
-	first.setAttribute("rowspan", 2);
+	first.style.background = "LightGoldenRodYellow";
 	first.addEventListener("click", goPage);
 
 	var second = document.getElementById("second");
-	second.style.background = "Pink";
+	second.style.background = "LightGoldenRodYellow";
+	second.setAttribute("rowspan", 2);
 	second.addEventListener("click", goPage);
 
-	first.innerHTML = `<td>알고리즘</td>`;
-	second.innerHTML = `<td>알고리즘</td>`;
+	first.innerHTML = `<td>인터넷 프로그래밍</td>`;
+	second.innerHTML = `<td>인터넷 프로그래밍</td>`;
 }
 
 function search() {

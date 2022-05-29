@@ -124,7 +124,7 @@ section .box .table .left {
 
 .wr_receiver {
 	position: relative;
-	height: 9%;
+	height: 10%;
 	width: 90%;
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
@@ -134,7 +134,7 @@ section .box .table .left {
 .wr_title {
 	position: relative;
 	line-height: 45px;
-	height: 9%;
+	height: 10%;
 	width: 90%;
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
