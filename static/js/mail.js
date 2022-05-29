@@ -8,7 +8,6 @@ fetch("http://ec2-54-167-22-41.compute-1.amazonaws.com/api/user/mail", {
 })
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     var mailbox = document.getElementById("mailbox_list_contents");
     data.data.mailData.forEach((element) => {
       mailbox.innerHTML += `<tr align="center">
@@ -33,12 +32,12 @@ function buttonClick(ID) {
   Cookies.set("Number", ID);
 }
 
-function sendMail() {
+async function sendMail() {
   let email = document
     .getElementById("receiver")
     .textContent.replace(/\n/g, "");
   email = email.replaceAll(" ", "");
-  fetch("http://ec2-54-167-22-41.compute-1.amazonaws.com/api/sendMail", {
+  await fetch("http://ec2-54-167-22-41.compute-1.amazonaws.com/api/sendMail", {
     method: "POST",
     headers: {
       "X-Access-Token": Cookies.get("X-Access-Token"),
@@ -59,5 +58,5 @@ function sendMail() {
     .then((data) => {
       console.log(data);
     });
-  window.location.reload();
+  window.location.reload(true);
 }
