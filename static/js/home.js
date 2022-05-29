@@ -33,5 +33,5 @@ function showSlides(n) {
 }
 
 function popUp() {
-  window.location.href = "http://127.0.0.1:5500/templates/login.html";
+  window.location.href = "http://localhost:5500/index.html";
 }
