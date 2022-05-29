@@ -91,24 +91,39 @@ section .box .table .right {
 .side_title {
     text-align: center;
     font-weight: bolder;
+	font-size: 30px;
 }
 
 .login {
     width: 50%; 
-    height: 120px; 
+    height: 140px; 
     padding: 20px;
-    margin-left: 20%;
+	margin: 10px auto 60px auto;
     font-size: medium;
+	font-weight: lighter;
     text-align: center;
-    border-radius: 10%;
+	border: 2px solid #aaa;
+    border-radius: 15px;
 }
 
-#user_id,
-#user_pw {
-    margin-bottom: 15px;
+.login table {
+	margin: 10px auto;
+}
+
+
+.login table tr {
+	height: 30px;
 }
 
 #login_sub,
 #signup_sub {
     margin: 10px;
+	border: 5px solid #eaeaea;
+	border-radius: 5px;
+}
+
+#login_sub:hover,
+#signup_sub:hover{
+	background-color: #aaa;
+	border: 5px solid #aaa;
 }

@@ -129,6 +129,7 @@ section .box .table .left {
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
 	margin-bottom: 10px;
+	padding-bottom: 8px;
 }
 
 .wr_title {

@@ -33,5 +33,5 @@ function showSlides(n) {
 }
 
 function popUp() {
-  window.location.href = "../index.html";
+  window.location.href = "../templates/login.html";
 }

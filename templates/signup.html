@@ -18,47 +18,80 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="../static/css/signup.css">
   <script src="../static/js/home.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
 </head>
 
 <body>
-<!-- 헤더 부분 -->
+  <!-- 헤더 부분 -->
   <header>
     <div class="inner">
       <a href="/" class="logo"><img src="../static/images/title_mjLogo.png" alt="MyongJi" width="40px"></a>
       <a href="/" class="title">EveryMail</a>
     </div>
   </header>
-
+  <!-- 시작 -->
   <!-- 박스 부분 -->
   <section>
     <div class="user_info">
-      <fieldset class = "fieldsize">
-        <h2 id = signup_title>회원가입</h2><hr>
-        <label for="username">사용자 이름</label>
-        <input type="text" id="username" placeholder="사용자 이름" name="username"><br>
+      <fieldset class="fieldsize">
+        <h2 id=signup_title>회원가입</h2>
+        <hr>
+        <table>
+          <tr>
+            <td>
+              <label for="username">사용자 이름</label>
+            </td>
+            <td>
+              <input type="text" id="username" placeholder="사용자 이름" name="username"><br>
+            </td>
+          </tr>
         <!-- 이 name 값으로 정보가 전달된다 -->
-        <label for="ID">아이디</label>
-        <input type="text" id="ID" placeholder="아이디" name="ID"><br>
+          <tr>
+            <td>
+              <label for="ID">아이디</label></td>
+            <td>
+              <input type="text" id="ID" placeholder="아이디" name="ID"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">이메일 주소</label></td>
+            <td>
+              <input type="text" id="email" placeholder="이메일 주소" name="email"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">비밀번호</label></td>
+            <td>
+              <input type="password" id="password" placeholder="비밀번호" name="password"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="re_password">비밀번호 확인</label></td>
+            <td>
+              <input type="password" id="re_password" placeholder="비밀번호 확인" name="re_password"><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="phonenumber">전화번호</label></td>
+            <td>
 
-        <label for="email">이메일 주소</label>
-        <input type="text" id="email" placeholder="이메일 주소" name="email"><br>
+              <input type="text" id="phonenumber" placeholder="전화번호" name="phonenumber"><br>
+            </td>
+          </tr>
+        </table>
 
-        <label for="password">비밀번호</label>
-        <input type="password" id="password" placeholder="비밀번호" name= "password"><br>
-
-        <label for="re_password">비밀번호 확인</label>
-        <input type= "password" id="re_password" placeholder="비밀번호 확인" name = "re_password"><br>
-
-        <label for="phonenumber">전화번호</label>
-        <input  type="text" id="phonenumber" placeholder="전화번호" name="phonenumber"><br>
-
-        <button type="submit" onclick = "popUp()" id="btn_signup">회원가입</button>
+        <button type="submit" onclick="popUp()" id="btn_signup">회원가입</button>
       </fieldset>
-      
+
     </div>
   </section>
 
