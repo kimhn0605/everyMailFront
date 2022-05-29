@@ -232,10 +232,10 @@ section .box .table .right {
 	table-layout: fixed;
 }
 
-#mailbox_list_contents tr td{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+#mailbox_list_contents tr td {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .mail_button {
@@ -246,6 +246,6 @@ section .box .table .right {
 }
 
 .mail_button:hover {
-	background-color: #CFF2F7;
-	border: 2px solid #CFF2F7;
+	background-color: #cff2f7;
+	border: 2px solid #cff2f7;
 }

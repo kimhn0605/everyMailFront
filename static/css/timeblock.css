@@ -146,8 +146,13 @@ input::-moz-placeholder {
 .search {
 	height: 100%;
 	width: 100%;
-	border-radius: 15px;
+	border-radius: 13px;
 	background-color: #ffffff;
+}
+
+.searchBtn:hover {
+	background-color: #a8a8a8;
+	border: 2px solid #a8a8a8;
 }
 
 input {
@@ -172,7 +177,6 @@ button {
 }
 
 .left .inner_box {
-	position: relative;
 	width: 90%;
 	height: 9%;
 	border: 2px solid rgb(0, 0, 0, 0.1);
@@ -186,18 +190,49 @@ button {
 }
 
 .inner_box table tr td {
-	font-size: 14px;
+	font-size: 15px;
 	width: 25%;
+	font-weight: bold;
 }
 
 .result {
-	position: relative;
-	height: 65%;
-	width: 90%;
+	height: 60%;
+	width: 91%;
 	border: 2px solid rgb(0, 0, 0, 0.1);
 	border-radius: 15px;
 	margin-bottom: 10px;
+	overflow-y: scroll;
 }
+
+#result_contents {
+	width: 100%;
+	font-size: 14px;
+	table-layout: fixed;
+}
+
+#result_contents tr td {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100%;
+	padding: 10px;
+	font-size: 13px;
+	table-layout: fixed;
+}
+
+.addBtn {
+	margin-right: 17%;
+	width: 70px;
+	background-color: #a5e7f1;
+	border: 2px solid #a5e7f1;
+	border-radius: 30px;
+}
+
+.addBtn:hover {
+	background-color: #cff2f7;
+	border: 2px solid #cff2f7;
+}
+
 /* TABLE RIGHT */
 section .box .table .right {
 	width: 50%;
@@ -219,6 +254,7 @@ section .box .table .right {
 	text-align: center;
 	margin-top: 45px;
 	border-radius: 15px;
+	cursor: pointer;
 }
 
 .timeblock tr,
